@@ -32,6 +32,7 @@ public class Main {
             System.out.println("2 - Сортированные фильмы по году выпуска.");
             System.out.println("3 - Сортированные фильмы по названию.");
             System.out.println("4 - Сортированные фильмы по режиссеру.");
+            System.out.println("5 - Поиск актеров.");
             System.out.println("0 - Выход.");
 
             int action = 0;
@@ -59,6 +60,8 @@ public class Main {
             } else if (action == 4) {
                 sortMoviesDirector();
                 break;
+            } else if (action == 5) {
+                SearchFilm.Main();
             } else {
                 System.out.println("Такого выбора нет.");
             }
